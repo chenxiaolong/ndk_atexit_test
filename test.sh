@@ -11,7 +11,7 @@ test_ndk_build() {
 
     rm -rf "${outdir}"
 
-    ndk-build V=1 \
+    ndk-build \
         NDK_LIBS_OUT="${outdir}/libs" \
         NDK_OUT="${outdir}/obj" \
         NDK_PROJECT_PATH=. \
